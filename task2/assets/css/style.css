@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    margin-top: 15px;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -12,6 +11,10 @@
     font-size: xx-large;
 }
 
+.about-academy{
+    margin-top: 15px;
+}
+
 h1 {
     font-weight: 900;
 }
@@ -19,6 +22,7 @@ h1 {
 .about {
     width: 500px;
     height: 200px;
+    padding: 18px;
 }
 
 img {
@@ -34,24 +38,34 @@ img {
 
 .box:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s linear;
+    transition: all 0.3s linear; 
 }
 
-.boxesLeft {
+/* .box:hover{
+    transition-duration: 1s;
+    width: 500px;
+    height: 300px;
+    background-color: whitesmoke;
+} */
+
+.boxesTop {
     display: flex;
+    margin-bottom: 18px;
 }
 
-.boxesRight {
+.boxesBottom {
     display: flex;
 }
 
 .box {
-    width: 500px;
+    width: 575px;
     height: 300px;
+    padding-left: 18px;
+    padding-top: 35px;
 }
 
 .title-about {
-    width: 200px;
+    width: 250px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -60,6 +74,11 @@ img {
 }
 
 .all-section {
-    margin-left: 335px;
-    margin-bottom: 30px;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+
+.boxes{
+    margin-top: 15px;
 }
