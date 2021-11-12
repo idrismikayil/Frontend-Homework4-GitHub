@@ -1,52 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.boxHolder{
+    width: 1200px;
+    height: 300px;
+    border: 1px solid white;
+    margin: auto;
 }
-
-.box {
-    width: 500px;
-    height: 50px;
+.box{
+    width: 400px;
+    height: 60px;
     background-color: orange;
-    position: absolute;
-    left: 33%;
-    top: 15px;
-    border-radius: 5px;
-    animation-name: ChangeSizeAndColor;
-    animation-duration: 3s;
-    /* animation-iteration-count: infinite; */
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 10px;
+    animation-name: Size-Color-Position;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-@keyframes ChangeSizeAndColor {
+@keyframes Size-Color-Position {
 
-    0% {
-        top: 0%;
-        bottom: 0%;
+    from{
+        margin-top: 2px;
     }
-
-    25% {
-        top: 0%;
-        bottom: 100%;
-        width: 400px;
-    }
-
-    50% {
-        top:100%;
-        bottom: 100%;
-        width: 300px;
-    }
-
-    75% {
-        top: 100%;
-        bottom: 0%;
-        width: 200px;
-    }
-
-    100% {
-        top: 0%;
-        bottom: 0%;
-        width: 100px;
+    50%{
+        margin-top: 150px;
         background-color: black;
+        width: 40px;
     }
-
+    to{
+        margin-top: 2px;
+        background-color: orange;
+    }
 }
